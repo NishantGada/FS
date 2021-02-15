@@ -4,7 +4,9 @@
     margin: auto;
     margin-bottom: 100px;
     /* border: 1px solid black; */
+}
 
+#create form {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -28,27 +30,18 @@
     margin-bottom: 20px;
 
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+
     font-size: 48px;
     color: yellowgreen;
 }
-
-/* #image-preview p {
-    font-size: 24px;
-} */
 
 #upload {
     display: none;
 }
 
 label {
-    /* background-color: yellowgreen;
-    color: white;
-    width: 300px;
-    padding: 10px;
-    text-align: center; */
     cursor: pointer;
 }
 
@@ -58,7 +51,9 @@ label {
     width: 350px;
 }
 
-#description-container input {
+#description,
+#ingredients,
+#time-to-make {
     width: 100%;
     background-color: white;
     border: 1px solid black;
@@ -67,24 +62,58 @@ label {
     margin: 0 0 20px 0;
 }
 
+#title {
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+}
+
+#title::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+#description-container input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
 #description {
     height: 200px;
 }
 
+#ingredients {
+    height: 150px;
+}
+
+#post-btn {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: yellowgreen;
+    border: 1px solid yellowgreen;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+}
+
 @media screen and (max-width: 360px) {
-    #create {
+    #create form {
         flex-direction: column;
     }
 
     #description-container {
         width: 90%;
-        margin-top: 60px;
     }
 
+    #title {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    #create {
+    #create form {
         flex-direction: column;
     }
 
@@ -96,16 +125,12 @@ label {
         width: 270px; height: 270px;
     }
 
-    /* label {
-        background-color: yellowgreen;
-        color: white;
-        width: 270px;
-        padding: 10px;
-        text-align: center;
-    }     */
-
     #description-container {
         width: 90%;
+    }
+
+    #title {
+        width: 100%;
         margin-top: 60px;
     }
 }

@@ -18,29 +18,33 @@
         <ul>
             <li></li>
             <li><a href="#">Explore</a></li>
-            <li><a href="./create.html">Create a post</a></li>
+            <li><a href="./create.html">Post </a></li>
             <li><a href="#">Logout</a></li>
         </ul>
     </nav>
     
     <section id="create">
-        <div id="upload-container">
-            <!-- <div id="image-preview">
-                <i class="fa fa-cloud-upload" aria-hidden="true"></i>
-            </div> -->
-            <input type="file" name="upload" id="upload">
-            <label for="upload">
-                <div id="image-preview">
-                    <i class="fa fa-cloud-upload" aria-hidden="true"></i><br>
-                    <!-- <p>Upload post</p> -->
-                </div>
-            </label>
-        </div>
-        <div id="description-container">
-            <input type="text" name="description" id="description" placeholder="description" autocomplete="off">
-            <input type="text" name="ingredients" id="ingredients" placeholder="ingredients" autocomplete="off">
-            <input type="text" name="time-to-make" id="time-to-make" placeholder="time-to-make" autocomplete="off">
-        </div>
+        <form action="">
+            <div id="upload-container">
+                <!-- <div id="image-preview">
+                    <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+                </div> -->
+                <input type="file" name="upload" id="upload">
+                <label for="upload">
+                    <div id="image-preview">
+                        <i class="fa fa-cloud-upload" aria-hidden="true"></i><br>
+                        <!-- <p>Upload post</p> -->
+                    </div>
+                </label>
+                <input type="text" name="title" id="title" placeholder="title" autocomplete="off">
+            </div>
+            <div id="description-container">
+                <input type="text" name="description" id="description" placeholder="Description / Recipe" autocomplete="off">
+                <input type="text" name="ingredients" id="ingredients" placeholder="Ingredients" autocomplete="off">
+                <input type="text" name="time-to-make" id="time-to-make" placeholder="Time to make" autocomplete="off">
+                <input type="submit" value="POST" id="post-btn">
+            </div>
+        </form>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

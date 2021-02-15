@@ -14,6 +14,7 @@ nav ul li {
 
 nav ul li a {
     color: black;
+    font-weight: bold;
     padding: 0 20px;
 }
 
@@ -40,15 +41,6 @@ header a:hover {
     color: #ffffff;
 } 
 
-/* @media screen and (max-width: 360px) {
-    nav ul {
-        margin: auto;
-        margin-bottom: 50px;
-        width: 90%;
-        padding: 20px 0;
-    }
-} */
-
 @media screen and (max-width: 768px) {
     nav ul {
         margin: auto;
@@ -56,8 +48,4 @@ header a:hover {
         width: 90%;
         padding: 20px 0;
     }
-
-    /* nav ul li a {
-        padding: 0 12px;
-    } */
 }
