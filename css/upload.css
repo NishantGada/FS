@@ -1,0 +1,141 @@
+.alert {
+    text-align: center;
+}
+
+#create {
+    width: 90%;
+    max-height: 100%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* border: 1px solid black; */
+}
+
+#create form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#upload-container {
+    /* border: 1px solid black; */
+    max-height: 100%;
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#image-preview {
+    width: 300px; 
+    height: 300px;
+    border: 1px dashed black;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 48px;
+    color: yellowgreen;
+}
+
+#upload {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+}
+
+#description-container {
+    /* border: 1px solid black; */
+    max-height: 100%;
+    width: 350px;
+}
+
+#description,
+#ingredients,
+#time-to-make {
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+}
+
+#title {
+    width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+}
+
+#title::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+#description-container input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+#description {
+    height: 200px;
+}
+
+#ingredients {
+    height: 150px;
+}
+
+#post-btn {
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: yellowgreen;
+    border: 1px solid yellowgreen;
+    outline: none;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 360px) {
+    #create form {
+        flex-direction: column;
+    }
+
+    #description-container {
+        width: 90%;
+    }
+
+    #title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #create form {
+        flex-direction: column;
+    }
+
+    #upload-container {
+        width: 90%;
+    }
+
+    #image-preview {
+        width: 270px; height: 270px;
+    }
+
+    #description-container {
+        width: 90%;
+    }
+
+    #title {
+        width: 100%;
+        margin-top: 60px;
+    }
+}

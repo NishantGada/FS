@@ -9,52 +9,19 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
     <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar">
-        <a class="navbar-brand nav-logo" href="#"><strong>FoodSteps</strong></a>
-        <button class="navbar-toggler menu-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse sub-nav" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-secondary my-2 my-sm-0 search-btn" type="submit">Search</button>
-            </form>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Create post</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Your posts</a>
-                        <a class="dropdown-item" href="#">Account</a>
-                        <a class="dropdown-item" href="#">Settings</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
-
-    <header><a href="./index.html">FoodSteps</a></header>
-
     <nav>
-        <ul>
-            <li></li>
+        <div class="logo">FoodSteps</div>
+        <div class="toogle_button"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul id="navbar-items">
+            <li><a href="./index.html" class="open">Home</a></li>
             <li><a href="#">Explore</a></li>
-            <li><a href="./create.html">Post</a></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="./upload.html">Upload</a></li>
+            <li><a href="#">Account</a></li>
         </ul>
     </nav>
 
@@ -65,21 +32,21 @@
     <section id="POSTS">
         <div class="card shadow-sm POST">
 
-            <p id="post-username"><strong>Nishant Gada</strong></p>
+            <p id="post-username"><a href="#"><strong>Nishant Gada</strong></a></p>
 
             <img src="./img/Food.jpg" alt="">
 
             <div class="card-body">
                 <p class="card-text">
-                    <span><strong> Basil topped Brushetta </strong></span><br>
+                    <span><a href="./post.html"><strong> Basil topped Brushetta </strong></a></span><br>
                     This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.
+                    content. 
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group post-action-buttons">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                     </div>
                     <small class="text-muted">9 mins..</small>
                 </div>
@@ -95,79 +62,13 @@
                 <p class="card-text">
                     <span><strong> Basil topped Brushetta </strong></span><br>
                     This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.
+                    content. 
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group post-action-buttons">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                    </div>
-                    <small class="text-muted">9 mins..</small>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-sm POST">
-
-            <p id="post-username"><strong>Nishant Gada</strong></p>
-
-            <img src="./img/Food.jpg" alt="">
-
-            <div class="card-body">
-                <p class="card-text">
-                    <span><strong> Basil topped Brushetta </strong></span><br>
-                    This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group post-action-buttons">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                    </div>
-                    <small class="text-muted">9 mins..</small>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-sm POST">
-
-            <p id="post-username"><strong>Nishant Gada</strong></p>
-
-            <img src="./img/Food.jpg" alt="">
-
-            <div class="card-body">
-                <p class="card-text">
-                    <span><strong> Basil topped Brushetta </strong></span><br>
-                    This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group post-action-buttons">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                    </div>
-                    <small class="text-muted">9 mins..</small>
-                </div>
-            </div>
-        </div>
-        <div class="card shadow-sm POST">
-
-            <p id="post-username"><strong>Nishant Gada</strong></p>
-
-            <img src="./img/Food.jpg" alt="">
-
-            <div class="card-body">
-                <p class="card-text">
-                    <span><strong> Basil topped Brushetta </strong></span><br>
-                    This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group post-action-buttons">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                     </div>
                     <small class="text-muted">9 mins..</small>
                 </div>
@@ -202,8 +103,15 @@
     <script>
         window.addEventListener('scroll', function () {
             var btt_btn = document.querySelector('.btt');
-            btt_btn.classList.toggle('active', window.scrollY > 0);
+            btt_btn.classList.toggle('active', window.scrollY > 400);
         });
+
+        let toogle = document.querySelector(".toogle_button");
+        let navbar_items = document.querySelector("#navbar-items");
+
+        toogle.addEventListener("click", function() {
+            navbar_items.classList.toggle("active")
+        })
     </script>
 
 

@@ -12,6 +12,7 @@ body {
 #howdy {
     margin: 40px 0px 40px 100px;
     font-weight: 600;
+    font-size: 27px;
 }
 
 #howdy p {
@@ -35,18 +36,28 @@ body {
 }
 
 .POST {
-    width: 320px;
+    width: 330px;
     font-size: 18px;
     margin: 0 0 40px 0;
 }
 
+.POST a {
+    text-decoration: none;
+    color: black;
+}
+
 .POST img {
-    max-width: 320px;
+    max-width: 330px;
 }
 
 #post-username {
     margin: 5px 0 5px 10px;
 }
+
+/* #post-username a {
+    text-decoration: none;
+    color: black;
+} */
 
 .card-text {
     font-size: 14px;
@@ -54,6 +65,11 @@ body {
 
 .card-text span {
     font-size: 20px;
+}
+
+.action_buttons {
+    /* border: 1px solid black; */
+    width: 200px;
 }
 
 .btt a {
