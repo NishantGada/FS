@@ -19,9 +19,9 @@
         <div class="toogle_button"><i class="fa fa-bars" aria-hidden="true"></i></div>
         <ul id="navbar-items">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#">Explore</a></li>
+            <li><a href="./explore.html">Explore</a></li>
             <li><a href="./upload.html">Upload</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="./profile.html">Profile</a></li>
         </ul>
     </nav>
 
@@ -29,12 +29,22 @@
         <h2 class="post_title">Basil Topped Bruschetta</h2>
         <img src="./img/Food.jpg" alt="" class="post_image">
         <div class="post_description">
-            <p class="username">Nishant Gada</p>
-            <p class="ingredients"><span><strong>Ingredients: <br></strong></span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            <p class="username">
+                <a href="#">Nishant Gada</a>
+                <a href="#">
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i> 
+                </a>
+                    
+            </p>
+            <p class="ingredients">
+                <span><strong>Ingredients: <br></strong></span>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Labore quae temporibus magnam quaerat enim nulla voluptas sed hic, similique 
                 rem fugiat libero beatae facilis debitis velit, inventore qui eius repudiandae?
             </p>
-            <p class="description"><span><strong>Recipe: <br></strong></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <p class="description">
+                <span><strong>Recipe: <br></strong></span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Quibusdam consequuntur sed dignissimos temporibus amet iste magni recusandae 
                 tempore est itaque.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -44,7 +54,19 @@
                 Quibusdam consequuntur sed dignissimos temporibus amet iste magni recusandae 
                 tempore est itaque.
             </p>
-            <p class="time_to_make"><span><strong>Time: <br></strong></span> 30 mins</p>
+            <p class="time_to_make">
+                <span><strong>Time: <br></strong></span>
+                30 mins
+            </p>
+        </div>
+    </section>
+
+    <section id="comments_tab">
+        <button class="accordion">Comments <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </section>
 
@@ -64,6 +86,22 @@
         })
     </script>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

@@ -1,7 +1,7 @@
 nav {
-    /* background-color: rgb(63, 63, 63); */
-    background-color: rgb(0, 82, 121);
-    color: white;
+    background-color: white;
+    box-shadow: 2px 2px 24px rgb(194, 194, 194);
+    color: black;
     padding: 20px 100px;
 
     display: flex;
@@ -9,9 +9,14 @@ nav {
     justify-content: space-between;
 }
 
+nav a:hover {
+    color: #6c5ce7;
+}
+
 .logo {
     font-size: 32px;
     font-weight: bold;
+    color: #6c5ce7;
 }
 
 nav ul {
@@ -33,17 +38,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav ul li a.open {
-    color: white;
-    font-style: italic;
+    color: #6c5ce7;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: white;
 }
 
 .toogle_button {
@@ -52,6 +56,7 @@ nav ul li a:hover {
     right: 30px;
     font-size: 20px;
     display: none;  
+    color: #6c5ce7;
 }
 
 @media screen and (max-width: 768px) {

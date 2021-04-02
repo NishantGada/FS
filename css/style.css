@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +8,8 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 #howdy {
@@ -54,11 +57,6 @@ body {
     margin: 5px 0 5px 10px;
 }
 
-/* #post-username a {
-    text-decoration: none;
-    color: black;
-} */
-
 .card-text {
     font-size: 14px;
 }
@@ -68,8 +66,38 @@ body {
 }
 
 .action_buttons {
-    /* border: 1px solid black; */
     width: 200px;
+}
+
+.action_buttons .like {
+    width: 100px;
+    background-color: white;
+    border: 1px solid #6C757D;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+
+.action_buttons .like:hover, .action_buttons .share:hover {
+    background-color: #6c5ce7;
+    /* background-color: #6C757D; */
+    border: #6C757D;
+    color: white;
+}
+
+.action_buttons .share  {
+    width: 100px;
+    background-color: white;
+    border: 1px solid #6C757D;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    padding: 5px 0px;
+    font-size: 14px;
+}
+
+.action_buttons .comment {
+    display: none;
 }
 
 .btt a {
@@ -79,8 +107,10 @@ body {
     visibility: hidden;
 
     text-decoration: none;
-    background-color: rgb(49, 49, 49);
-    border: 1px solid rgb(49, 49, 49);
+    background-color: #6c5ce7;
+    /* background-color: rgb(49, 49, 49); */
+    border: 1px solid #6c5ce7;
+    /* border: 1px solid rgb(49, 49, 49); */
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -101,6 +131,10 @@ body {
         margin: 40px 0 0 0;
         text-align: center;
     }
+
+    .action_buttons {
+        width: 160px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -119,5 +153,11 @@ body {
     #howdy {
         margin: 40px 0 40px 0;
         text-align: center;
+    }
+
+    .btt a {
+        right: 15px; 
+        bottom: 15px;
+        padding: 5px;
     }
 }

@@ -4,7 +4,6 @@ section {
     margin: auto;
     /* border: 1px solid black; */
     margin-top: 100px;
-    margin-bottom: 100px;
 
     display: flex;
     flex-direction: column;
@@ -34,13 +33,78 @@ section {
 
 .post_description .username {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post_description .username a {
+    /* color: #3c40c6; */
+    color: #6c5ce7;
+    text-decoration: none;
+}
+
+.post_description .username a i {
+    font-weight: 200;
+    font-size: 24px;
+    color: #6c5ce7;
+}
+
+#comments_tab {
+    /* border: 1px solid black; */
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion {
+    background-color: #6c5ce7;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.9s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion:focus {
+    outline: none;
+    border: none;
+}
+  
+.active, .accordion:hover { 
+    border: none;
+    outline: none;
+}
+  
+.panel {
+    margin: 20px 0;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel p {
+    margin: 30px 0;
 }
 
 
 @media screen and (max-width: 768px) {
     section {
         width: 90%;
+        margin-top: 70px;
         padding: 0 10px;
     }
     
@@ -56,5 +120,9 @@ section {
 
     .post_description .username {
         font-size: 24px;
+    }
+
+    .post_description .username span a {
+        font-size: 13px;
     }
 }

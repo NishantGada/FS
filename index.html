@@ -9,7 +9,6 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
     <link rel="stylesheet" href="css/navbar.css">
 </head>
 
@@ -19,9 +18,9 @@
         <div class="toogle_button"><i class="fa fa-bars" aria-hidden="true"></i></div>
         <ul id="navbar-items">
             <li><a href="./index.html" class="open">Home</a></li>
-            <li><a href="#">Explore</a></li>
+            <li><a href="./explore.html">Explore</a></li>
             <li><a href="./upload.html">Upload</a></li>
-            <li><a href="#">Account</a></li>
+            <li><a href="./profile.html">Profile</a></li>
         </ul>
     </nav>
 
@@ -44,15 +43,80 @@
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group post-action-buttons action_buttons">
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        <button class="like"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button class="share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                     </div>
                     <small class="text-muted">9 mins..</small>
                 </div>
+                <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button type="button" class="btn btn-sm btn-outline-secondary like"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary comment"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                    <small class="text-muted">9 mins..</small>
+                </div> -->
             </div>
         </div>
         <div class="card shadow-sm POST">
+
+            <p id="post-username"><a href="#"><strong>Nishant Gada</strong></a></p>
+
+            <img src="./img/Food.jpg" alt="">
+
+            <div class="card-body">
+                <p class="card-text">
+                    <span><a href="./post.html"><strong> Basil topped Brushetta </strong></a></span><br>
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button class="like"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button class="share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                    <small class="text-muted">9 mins..</small>
+                </div>
+                <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button type="button" class="btn btn-sm btn-outline-secondary like"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary comment"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                    <small class="text-muted">9 mins..</small>
+                </div> -->
+            </div>
+        </div>
+        <div class="card shadow-sm POST">
+
+            <p id="post-username"><a href="#"><strong>Nishant Gada</strong></a></p>
+
+            <img src="./img/Food.jpg" alt="">
+
+            <div class="card-body">
+                <p class="card-text">
+                    <span><a href="./post.html"><strong> Basil topped Brushetta </strong></a></span><br>
+                    This is a wider card with supporting text below as a natural lead-in to additional
+                    content. 
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button class="like"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button class="share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                    <small class="text-muted">9 mins..</small>
+                </div>
+                <!-- <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group post-action-buttons action_buttons">
+                        <button type="button" class="btn btn-sm btn-outline-secondary like"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary comment"><i class="fa fa-comment-o" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary share"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                    </div>
+                    <small class="text-muted">9 mins..</small>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="card shadow-sm POST">
 
             <p id="post-username"><strong>Nishant Gada</strong></p>
 
@@ -95,7 +159,7 @@
                     <small class="text-muted">9 mins..</small>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <button class="btt"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></button>
@@ -125,5 +189,4 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

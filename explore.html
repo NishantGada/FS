@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/explore.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">FoodSteps</div>
+        <div class="toogle_button"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul id="navbar-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./explore.html" class="open">Explore</a></li>
+            <li><a href="./upload.html">Upload</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="search">
+        <form action="">
+            <input type="search" name="search" id="search" placeholder="search" required autocomplete="off">
+            <button type="submit" id="search_button">search</button>
+        </form>
+    </div>
+
+    <section class="posts">
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+        <div class="post"><img src="./img/Pizza.jpg" alt=""></div>
+    </section>
+
+    <button class="btt"><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></button>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var btt_btn = document.querySelector('.btt');
+            btt_btn.classList.toggle('active', window.scrollY > 400);
+        });
+
+        let toogle = document.querySelector(".toogle_button");
+        let navbar_items = document.querySelector("#navbar-items");
+
+        toogle.addEventListener("click", function() {
+            navbar_items.classList.toggle("active")
+        })
+    </script>
+</body>
